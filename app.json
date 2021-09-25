@@ -12,15 +12,15 @@
     "website": "",
     "success_url": "https://telegram.dog/trprogram",
     "env": {
-        "توكن_بوتك": {
+        "Bot_Token": {
             "description": "You Telegram Bot Token from @BotFather",
             "value": ""
         },
-        "ايبي_هاش": {
+        "API_HASH": {
             "description": "Your API Hash from my.telegram.org",
             "value": ""
         },
-        "ايبي_ايدي": {
+        "API_ID": {
             "description": "Your API ID from my.telegram.org",
             "value": ""
         }
