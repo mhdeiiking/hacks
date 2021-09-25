@@ -1,26 +1,26 @@
 {
-    "name": "LEGENDX BOT",
-    "description": "A bot CAN DO ANYTHING",
+    "name": "TrHackBot",
+    "description": "يمكنك اختراق اي حساب تيليقرام بواسطة البوت",
     "logo": "",
     "keywords": [
-        "TELETHON",
-        "X ARMY",
+        "JmThon",
+        "Trakos",
         "Telegram Bot",
-        "piro bolte",
-        "LEGENDX22"
+        "Love All",
+        "ttrakos"
     ],
     "website": "",
-    "success_url": "https://telegram.dog/LEGENDX22",
+    "success_url": "https://telegram.dog/trprogram",
     "env": {
-        "BOT_TOKEN": {
+        "توكن_بوتك": {
             "description": "You Telegram Bot Token from @BotFather",
             "value": ""
         },
-        "API_HASH": {
+        "ايبي_هاش": {
             "description": "Your API Hash from my.telegram.org",
             "value": ""
         },
-        "APP_ID": {
+        "ايبي_ايدي": {
             "description": "Your API ID from my.telegram.org",
             "value": ""
         }
