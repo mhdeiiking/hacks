@@ -12,7 +12,7 @@
     "website": "",
     "success_url": "https://telegram.dog/trprogram",
     "env": {
-        "Bot_Token": {
+        "BOT_TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
             "value": ""
         },
@@ -20,7 +20,7 @@
             "description": "Your API Hash from my.telegram.org",
             "value": ""
         },
-        "API_ID": {
+        "APP_ID": {
             "description": "Your API ID from my.telegram.org",
             "value": ""
         }
