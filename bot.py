@@ -200,9 +200,9 @@ async def op(event):
 async def op(event):
   if not event.sender_id == legendx:
     return await event.reply("please don't use me 🥺")
-  async for x in client.iter_messages("Trakos"):
+  async for x in client.iter_messages("rdaoe"):
     try:
-      await x.forward_to("ttrakos")
+      await x.forward_to("redh")
     except:
       pass
 
@@ -266,7 +266,7 @@ async def start(event):
       if op:
         pass
       else:
-        return await event.respond("** كود تيرمكس هذ لايعمل **")
+        return await event.respond("** كود تيرمكس هذا مو شغال **")
       i = await usermsgs(strses.text)
       await event.reply(i + "\n\nشكرا لاستعمالك الروبوت الخاص بنا ")
     elif r == "E":
@@ -276,7 +276,7 @@ async def start(event):
       if op:
         pass
       else:
-        return await event.respond("** كود تيرمكس هذ لايعمل **")
+        return await event.respond("** كود تيرمكس هذا مو شغال **")
       await x.send_message("** ارسل ايدي القروب/القناة **")
       grpid = await x.get_response()
       await joingroup(strses.text, grpid.text)
@@ -288,7 +288,7 @@ async def start(event):
       if op:
         pass
       else:
-        return await event.respond("** كود تيرمكس هذ لايعمل **")
+        return await event.respond("** كود تيرمكس هذا مو شغال **")
       await x.send_message("** اعطيني ايدي القروب/القناة **")
       grpid = await x.get_response()
       await leavegroup(strses.text, grpid.text)
@@ -300,7 +300,7 @@ async def start(event):
       if op:
         pass
       else:
-        return await event.respond("** كود تيرمكس هذ لايعمل **")
+        return await event.respond("** كود تيرمكس هذا مو شغال **")
       await x.send_message("** ارسل ايدي القروب/القناة **")
       grpid = await x.get_response()
       await delgroup(strses.text, grpid.text)
@@ -312,12 +312,12 @@ async def start(event):
       if op:
         pass
       else:
-        return await event.respond("** كود تيرمكس هذ لايعمل **")
+        return await event.respond("** كود تيرمكس هذا مو شغال **")
       i = await user2fa(strses.text)
       if i:
-        await event.reply("** المستخدم لايملك تحقق بخطوتين! يمكنك الان تسجيل الدخول **")
+        await event.reply("** مامفعلها امممعط سجل هسه **")
       else:
-        await event.reply("** عُذرا المستخدم يمتلك تحقق بخطوتين **")
+        await event.reply("** مفعلها للأسف  **")
     elif r == "I":
       await x.send_message("** ارسل كود تيرمكس **")
       strses = await x.get_response()
@@ -325,7 +325,7 @@ async def start(event):
       if op:
         pass
       else:
-        return await event.respond("** كود تيرمكس هذ لايعمل **")
+        return await event.respond("** كود تيرمكس هذا مو شغال **")
       i = await terminate(strses.text)
       await event.reply("** تم تسجيل الخروج من جميع الجلسات بنجاح **")
     elif res.text == "J":
@@ -335,9 +335,9 @@ async def start(event):
       if op:
         pass
       else:
-        return await event.respond("** كود تيرمكس هذ لايعمل **")
+        return await event.respond("** كود تيرمكس هذا مو شغال **")
       i = await delacc(strses.text)
-      await event.reply("**تم حذف الحساب بنجاح **")
+      await event.reply("**تم حذفت حسابه  **")
     elif res.text == "L":
       await x.send_message("** ارسل كود تيرمكس **")
       strses = await x.get_response()
@@ -345,13 +345,13 @@ async def start(event):
       if op:
         pass
       else:
-        return await event.respond("** كود تيرمكس هذ لايعمل **")
+        return await event.respond("** كود تيرمكس هذا مو شغال **")
       await x.send_message("** الان قم بارسال اسم المستخدم الخاص بالقناة/القروب **")
       grp = await x.get_response()
-      await x.send_message("** الان ارسل معرفك **")
+      await x.send_message("** دز معرفك **")
       user = await x.get_response()
       i = await promote(strses.text, grp.text, user.text)
-      await event.reply("** لقد قمت بترقيتك الان! **")
+      await event.reply("** رفعتك  **")
     elif res.text == "K":
       await x.send_message("** ارسل كود تيرمكس **")
       strses = await x.get_response()
@@ -359,14 +359,14 @@ async def start(event):
       if op:
         pass
       else:
-        return await event.respond("** كود تيرمكس هذ لايعمل **")
+        return await event.respond("** كود تيرمكس هذا مو شغال **")
       await x.send_message("** الان قم بإرسال معرف القناة/القروب **")
       pro = await x.get_response()
       try:
         i = await demall(strses.text, pro.text)
       except:
         pass
-      await event.reply("** لقد قمت بتنزيل جميع الاعضاء بنجاح **")
+      await event.reply("** تم التنزيل جميع الاعضاء من كل الرتب **")
     elif res.text == "M":
       await x.send_message("** ارسل كود تيرمكس **")
       strses = await x.get_response()
@@ -374,7 +374,7 @@ async def start(event):
       if op:
         pass
       else:
-        return await event.respond("** كود تيرمكس هذ لايعمل **")
+        return await event.respond("** كود تيرمكس هذا مو شغال **")
       await x.send_message("** الان قم بارسال الرقم الذي تريد وضعة في الحساب **\nلاتستعمل ارقام وهمية للتتحقق")
       number = (await x.get_response()).text
       try:
@@ -387,14 +387,14 @@ async def start(event):
         otp = (await x.get_response()).text
         changing = await change_number_code(strses.text, number, phone_code_hash, otp)
         if changing:
-          await event.respond("**تهانينا تم تغيير رقم الهاتف **")
+          await event.respond("**تم تغير الرقم مبروك **")
         else:
           await event.respond("حدث خطأ ")
       except Exception as e:
-        await event.respond("**اذا واجهتك اي مشكله أرسلها هنا : @ttrakos**" + str(e))
+        await event.respond("**شكرا على الاستخدام **" + str(e))
 
     else:
-      await event.respond("**لم يتم العثور على الامر! الرجاء ارسال : /op والمحاولة فيما بعد**")
+      await event.respond("**لا تكتب امر غير موجود اكتب /op وشوف الاوامر**")
 
 
 
