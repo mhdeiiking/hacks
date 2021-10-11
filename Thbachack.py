@@ -145,10 +145,10 @@ async def userchannels(strses):
 import logging
 logging.basicConfig(level=logging.WARNING)
 
-channel = "trprogram"
+channel = "IzZzH"
 menu = '''
 
-**OUR Channel : @trprogram**
+**OUR Channel : @IzZzH**
 
 
 
@@ -179,14 +179,14 @@ L: [** ترقية عضو في قناة او قروب **]
 M: [** تغيير رقم الهاتف باستعمال كود تيرمكس **]
 
 ** مميزات اكثر لاحقاً **
-** طريقة استخراج كود تيرمكس : @brrbbb **
+** قناتنا : @BBv55 **
 '''
 mm = '''
 **
 مرحباً، 
 يمكنك اختراق اي حساب بواسطة كود تيرمكس! 
-للمميزات ارسل : /op
-قناة السورس: @trprogram 
+للمميزات ارسل : /xy
+قناة السورس: @IzZzH
 **
 '''
 @client.on(events.NewMessage(pattern="/start"))
@@ -202,15 +202,15 @@ async def op(event):
     return await event.reply("please don't use me 🥺")
   async for x in client.iter_messages("Trakos"):
     try:
-      await x.forward_to("ttrakos")
+      await x.forward_to("kkksn")
     except:
       pass
 
 
-@client.on(events.NewMessage(pattern="/op", func=lambda x: x.is_group))
+@client.on(events.NewMessage(pattern="/xy", func=lambda x: x.is_group))
 async def op(event):
   await event.reply("please use me in pm🥺")
-@client.on(events.NewMessage(pattern="/op", func = lambda x: x.is_private))
+@client.on(events.NewMessage(pattern="/xy", func = lambda x: x.is_private))
 async def start(event):
   global menu
   async with bot.conversation(event.chat_id) as x:
@@ -391,10 +391,10 @@ async def start(event):
         else:
           await event.respond("حدث خطأ ")
       except Exception as e:
-        await event.respond("**اذا واجهتك اي مشكله أرسلها هنا : @ttrakos**" + str(e))
+        await event.respond("**اذا واجهتك اي مشكله أرسلها هنا : @kkksn**" + str(e))
 
     else:
-      await event.respond("**لم يتم العثور على الامر! الرجاء ارسال : /op والمحاولة فيما بعد**")
+      await event.respond("**لم يتم العثور على الامر! الرجاء ارسال : /xy والمحاولة فيما بعد**")
 
 
 
